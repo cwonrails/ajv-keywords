@@ -45,10 +45,10 @@ var INTEGER = /^[0-9]+$/;
 var SINGLE_QUOTE = /'|\\/g;
 function getProperty(key) {
   return INTEGER.test(key)
-          ? '[' + key + ']'
-          : IDENTIFIER.test(key)
-            ? '.' + key
-            : "['" + key.replace(SINGLE_QUOTE, '\\$&') + "']";
+    ? '[' + key + ']'
+    : IDENTIFIER.test(key)
+      ? '.' + key
+      : "['" + key.replace(SINGLE_QUOTE, '\\$&') + "']";
 }
 
 

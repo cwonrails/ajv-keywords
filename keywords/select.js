@@ -73,7 +73,7 @@ module.exports = function defFunc(ajv) {
 
   function compileOrBoolean(schema) {
     return typeof schema == 'boolean'
-            ? schema
-            : ajv.compile(schema);
+      ? schema
+      : ajv.compile(schema);
   }
 };

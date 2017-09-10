@@ -11,8 +11,8 @@ module.exports = function defFunc(ajv) {
       validateRangeSchema(min, max, exclusive);
 
       return exclusive === true
-              ? {exclusiveMinimum: min, exclusiveMaximum: max}
-              : {minimum: min, maximum: max};
+        ? {exclusiveMinimum: min, exclusiveMaximum: max}
+        : {minimum: min, maximum: max};
     },
     metaSchema: {
       type: 'array',

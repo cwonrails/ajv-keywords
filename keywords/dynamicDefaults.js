@@ -31,8 +31,8 @@ module.exports = function defFunc(ajv) {
       }
 
       return it.opts.useDefaults && !it.compositeRule
-              ? assignDefaults
-              : noop;
+        ? assignDefaults
+        : noop;
 
       function assignDefaults(data) {
         for (var prop in schema)
